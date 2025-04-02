@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <style>
+      /* Global font and background styling */
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Oxanium", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main content styling with slight transparency */
+      .content {
+        background-color: black;
+        padding: 30px;
+        border-radius: 8px;
+        margin-left: 260px; /* Offset for floating sidebar */
+        flex: 1;
+      }
+
+      /* Footer styling */
+      footer {
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+      }
+
+      .d-flex {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex">
+      <!-- Sidebar Navigation -->
+      <div id="sidebar-container"></div>
+
+      <!-- Main Content -->
+      <main class="content flex-fill p-4">
+        <!-- Contact Section -->
+        <section id="contact">
+          <h1>Contact Me</h1>
+
+          <!-- Contact Info Grid -->
+          <div class="row gy-4" style="padding-left: 200px">
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>
+                    No. 10 & 11, G-3, Lake lamp apartment, 5th main, 6th cross,
+                    ITI Layout,Balagangadhar nagar, Mallathahalli post,
+                    Bangalore,560056
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+91 6366113723</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>ronitv143@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>Social Profiles</h3>
+                  <div class="social-links">
+                    <a
+                      href="https://x.com/raghavan_ronit"
+                      class="text-light mx-1"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                    <a
+                      href="https://github.com/raghavan10"
+                      class="text-light mx-1"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/rawwknith/"
+                      class="text-light mx-1"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/ronit-v-raghavan-a881a4283/"
+                      class="text-light mx-1"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Contact Info Grid -->
+          <h2>Get In Touch</h2>
+          <form id="contact-form" onsubmit="sendEmail(event)">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="form-control mb-3"
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              class="form-control mb-3"
+            />
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+              class="form-control mb-3"
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+              class="form-control mb-3"
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </section>
+        <footer class="mt-4">
+          <p class="text-center text-light">
+            &copy; 2024 Ronit V Raghavan. All rights reserved.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Load Sidebar -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sidebarContainer = document.getElementById("sidebar-container");
+        if (sidebarContainer) {
+          fetch("sidebar.html")
+            .then((response) => response.text())
+            .then((data) => {
+              sidebarContainer.innerHTML = data;
+            })
+            .catch((error) => console.error("Error loading sidebar:", error));
+        }
+      });
+    </script>
+    <script src="js/mail.js"></script>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

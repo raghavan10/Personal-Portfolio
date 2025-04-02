@@ -1,0 +1,213 @@
+/* Main layout styling */
+body {
+    font-family: 'Oxanium', sans-serif;
+    color: #ddd;
+    background-color: #111;
+}
+
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+.content {
+    color: #ddd;
+    background-color: #222;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.info-box {
+    flex: 1 1 45%;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0;
+}
+
+.bi-chevron-right {
+    margin-right: 10px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.info-box li {
+    margin: 5px 0;
+    width: 300px;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.info-box li::before {
+    content: "\2022";
+    color: #28a745;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section h2 {
+    color: #fff;
+    font-size: 32px;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ddd;
+}
+
+.skill .skill-name {
+    text-align: left;
+    width: 30%;
+}
+
+.progress-bar-container {
+    width: 60%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #28a745;
+}
+
+.skill-level {
+    text-align: right;
+    min-width: 40px;
+}
+
+.resume-section {
+    color: #ddd;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.resume-section h2 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.resume-section p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #1262b7;
+    /* Blue background */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #1b69bd;
+    /* Darker blue on hover */
+    text-decoration: none;
+}
+
+.testimonials-section {
+    color: #ddd;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    color: #fff;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.carousel-item .testimonial-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.carousel-item p {
+    font-style: italic;
+    color: #aaa;
+}
+
+.carousel-item img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.carousel-item h5 {
+    margin-top: 10px;
+    color: #28a745;
+    font-size: 18px;
+}
+
+.carousel-item p {
+    color: #888;
+}

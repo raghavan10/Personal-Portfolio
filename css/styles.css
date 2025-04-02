@@ -1,0 +1,420 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oxanium', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #222;
+    color: #f0f0f0;
+    height: 100vh;
+    position: fixed;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Theme Toggle Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.project p {
+    margin: 10px;
+    color: #666;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #444;
+    outline: none;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#contact-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#contact-form .btn:hover {
+    background-color: #666;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Apply Custom Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Floating Sidebar Widget */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    /* Black Sidebar */
+    color: #ffffff;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    /* Darker shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.profile-info h1, .profile-info p {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.profile-info .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    /* Subtle inner shadow */
+}
+
+/* Sidebar Navigation */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #90caf9;
+    /* Light blue for hover effect */
+}
+
+/* Button Styling */
+#theme-toggle {
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Shadow for button */
+}
+
+#theme-toggle:hover {
+    background-color: #303f9f;
+}
+
+/* Main Content Offset */
+.content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+/* Import Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333;
+    /* Darker shades of black */
+}
+
+.light-mode .sidebar {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode a {
+    color: #333;
+}
+
+.light-mode a:hover {
+    color: #666;
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3 {
+    color: #111;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #a8c0ff;
+    /* Light shades of blue */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dark-mode .sidebar {
+    background-color: #1c1c1c;
+    color: #a8c0ff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode a {
+    color: #90caf9;
+    /* Shades of blue */
+}
+
+.dark-mode a:hover {
+    color: #bbdefb;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #bbdefb;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#theme-toggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #303f9f;
+}
+
+/* Main Content */
+.content {
+    margin-left: 300px;
+    padding: 20px;
+}
